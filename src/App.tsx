@@ -1,24 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {useEffect} from 'react';
+import Header from "./Components/Header";
+import {Route, Routes} from "react-router-dom";
+import {useDispatch} from "react-redux";
+import {ACTIONS} from "./store/cats/reducer";
+import {routes} from "./router/routes";
+import './styles/app.scss';
 
 function App() {
+    const dispatch = useDispatch();
+    useEffect(() => {
+        dispatch({type: ACTIONS.FETCH_ITEMS});
+    }, [dispatch]);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+       <Header/>
+        <Routes>
+            {routes?.length && routes.map(rout => (
+                <Route key={rout.path} path={rout.path} element={rout.element}/>
+            ))}
+        </Routes>
     </div>
   );
 }

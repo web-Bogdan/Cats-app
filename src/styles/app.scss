@@ -1,0 +1,116 @@
+@import "variables";
+
+// Reset styles
+*,
+*::before,
+*::after{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+// Global styles
+body{
+  background-color: $white;
+  font-family: $font;
+  font-size: $font-size;
+  overflow: scroll;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.container{
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.link{
+  color: #1E88E5;
+  &:hover{
+    color: #e76eff;
+  }
+}
+.message{
+  margin-top: 300px;
+  color: #000000;
+  text-align: center;
+}
+
+.loading{
+  margin-top: 46px;
+  margin-bottom: 31px;
+  color: #000000;
+  text-align: center;
+}
+
+// Header styles
+.header{
+  position: fixed;
+  width: 100%;
+  z-index: 1001;
+  top: 0;
+  background-color: $header-bg;
+  .header__menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+  .header__link{
+    padding: 23px;
+    color: $white;
+    opacity: .7;
+    transition: opacity .2s ease;
+    cursor: pointer;
+    &:hover{
+      opacity: 1;
+    }
+  }
+  .active.header__link{
+    background-color: #1E88E5;
+    opacity: 1;
+  }
+}
+
+// Cats styles
+.cats{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+  margin-top: 104px;
+  gap: 52px;
+  margin-bottom: 20px;
+  .cats__item{
+    position: relative;
+    transition: all .2s ease;
+    aspect-ratio: 1 / 1;
+    height: 100%;
+    &:hover{
+      transform: scale(108%);
+      box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.24), 0px 9px 18px rgba(0, 0, 0, 0.18);
+    }
+    &:hover .cats__like path{
+      fill: red;
+    }
+  }
+  .cats__image{
+    width: 100%;
+    height: 100%;
+  }
+  .cats__like{
+    position: absolute;
+    right: 19px;
+    bottom: 24px;
+    cursor: pointer;
+  }
+  .cats__like path{
+    fill: transparent;
+  }
+}
+
+// React-router link styles
+
+
+
