@@ -1,4 +1,4 @@
-import React from 'react';
+
 import {Link} from "react-router-dom";
 import {ICat} from "../store/cats/reducer";
 import {useTypedSelector} from "../hooks/useTypedSelector";

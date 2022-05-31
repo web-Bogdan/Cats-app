@@ -58,7 +58,7 @@ type TAction = FETCH_ITEMS | FETCH_SUCCESS | FETCH_ERROR | LIKE_CLICK | INITIAL_
 export const catsReducer = (state = initialCats, action: TAction) => {
     switch(action.type){
         case ACTIONS.INITIAL_LOADING:
-            const isFirstLoading = !state.catsList;
+            const isFirstLoading = !state.catsList.length;
             return {...state, isLoading: isFirstLoading};
         case ACTIONS.FETCH_SUCCESS:
             const newCats = action.payload.map(cat => {

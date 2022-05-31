@@ -1,8 +1,8 @@
 import React from 'react';
-import SVGSelector from "./SVGSelector";
 import {useDispatch} from "react-redux";
 import {useTypedSelector} from "../hooks/useTypedSelector";
 import {ICat} from "../store/cats/reducer";
+import SVGSelector from "./SVGSelector";
 
 interface IItemCat {
     cat: ICat;

@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import {useEffect} from 'react';
 import {useInView} from "react-intersection-observer";
 import {useDispatch} from "react-redux";
 import {ACTIONS, ICat} from "../store/cats/reducer";
