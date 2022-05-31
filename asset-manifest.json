@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Cats-app/static/css/main.e6a504d3.css",
-    "main.js": "/Cats-app/static/js/main.c611458f.js",
+    "main.js": "/Cats-app/static/js/main.d6637140.js",
     "index.html": "/Cats-app/index.html",
     "main.e6a504d3.css.map": "/Cats-app/static/css/main.e6a504d3.css.map",
-    "main.c611458f.js.map": "/Cats-app/static/js/main.c611458f.js.map"
+    "main.d6637140.js.map": "/Cats-app/static/js/main.d6637140.js.map"
   },
   "entrypoints": [
     "static/css/main.e6a504d3.css",
-    "static/js/main.c611458f.js"
+    "static/js/main.d6637140.js"
   ]
 }
