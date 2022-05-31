@@ -2,7 +2,7 @@
 import {Link} from "react-router-dom";
 import {ICat} from "../store/cats/reducer";
 import {useTypedSelector} from "../hooks/useTypedSelector";
-import Cat from "../Components/Cat";
+import Cat from "../components/Cat";
 
 const Favourites = () => {
     const favouritesCats: ICat[] = useTypedSelector(state => state.catsReducer.favouriteCats);

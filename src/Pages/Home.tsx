@@ -2,7 +2,7 @@ import {useEffect} from 'react';
 import {useInView} from "react-intersection-observer";
 import {useDispatch} from "react-redux";
 import {ACTIONS, ICat} from "../store/cats/reducer";
-import Cat from "../Components/Cat";
+import Cat from "../components/Cat";
 import {useTypedSelector} from "../hooks/useTypedSelector";
 
 const Home = () => {

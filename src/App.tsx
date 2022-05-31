@@ -3,7 +3,7 @@ import {Route, Routes} from "react-router-dom";
 import {useDispatch} from "react-redux";
 import {ACTIONS} from "./store/cats/reducer";
 import {routes} from "./router/routes";
-import Header from "./Components/Header";
+import Header from "./components/Header";
 import './styles/app.scss';
 
 function App() {
