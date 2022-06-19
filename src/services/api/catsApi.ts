@@ -1,7 +1,7 @@
 import {ICatsState} from "../../store/cats/reducer";
 import axios from "axios";
 
-let currentPage = 100;
+let currentPage = 102;
 
 export const CatsApi = {
     fetchCats(): Promise<ICatsState>{
